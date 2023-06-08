@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/Gashapon.css">
+	</head>
+	<style>
+		/* || Checkbox hack to control information box display */
+
+		label[for="toggle"] {
+			position: absolute;
+			top: 35px;
+			right: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		input[type="checkbox"] {
+			position: absolute;
+			top: -100px;
+		}
+
+		/* information box styling */
+
+		aside {
+			background-color: #ffffff;
+			color: #00acff;
+
+			width: 500px;
+			height: 100%;
+			padding: 0 20px;
+
+			position: fixed;
+			top: 0;
+			right: -570px;
+
+			transition: 0.6s all;
+		}
+
+		aside li {
+			text-align: center;
+			font-size: 24px;
+			list-style: none;
+			margin-bottom: 100px;
+		}
+
+		a {
+			color: #00acff;
+			text-decoration: none;
+		}
+
+		/* Second part of the checkbox hack — the checked state */
+
+		input[type=checkbox]:checked+aside {
+			right: 0px;
+		}
+
+		.zuo {
+			position: absolute;
+			top: 55px;
+			left: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		.three {
+			width: 30%;
+			margin-left: 2%;
+			float: left;
+		}
+
+		.two {
+			margin-top: 30px;
+			width: 40%;
+			float: left;
+			margin-left: 5%;
+		}
+
+		.five_1 {
+			margin-top: 30px;
+			width: 10%;
+			float: left;
+		}
+
+		.five_4 {
+			margin-top: 30px;
+			width: 30%;
+			float: left;
+			margin-left: 5%;
+		}
+	</style>
+
+	<body style="background-color: #f8f7f0;" monica-locale="zh_CN" monica-version="1.8.2"
+		monica-id="ofpnmcalabcbjgholdjcjblkibolbppb">
+		<a href="./index.html">
+			<div class="word"></div>
+		</a>
+		<a href="./h.html"><img src="../img/1-35.png" alt="" class="zuo" style="width: 150px;"></a>
+
+		<label for="toggle"><img src="../img/1-36.png" alt="" style="width: 150px;"></label>
+		<input type="checkbox" id="toggle">
+		<aside>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<ol>
+				<li>E-mail:<br> <br><a href="liuxinyun1213@gmail.com"> liuxinyun1213@gmail.com</a></li>
+				<li>Instagram:<br><br><a href="https://instagram.com/ke011_213?igshid=OGQ5ZDc2ODk2ZA==">ke011_213 </a>
+				</li>
+				<li>小红书：<br><br><a
+						href="https://www.xiaohongshu.com/user/profile/5fe6cf17000000000101fac1?xhsshare=CopyLink&amp;appuid=5fe6cf17000000000101fac1&amp;apptime=1686045289">Ke.
+					</a></li>
+			</ol>
+
+		</aside>
+
+
+		<div class="three">
+			<img src="../img/3-30.png" alt="" style="height: 300px;">
+		</div>
+		<div class="three">
+			<img src="../img/3-29.png" alt="" style="height: 300px;">
+		</div>
+		<div class="three">
+			<div style="margin-left: 27%;">
+				<strong>
+					<p style="font-size: 24px;">品鉴级奶油酒 </p>
+				</strong>
+				<strong>
+					<p>我们的品牌BERUMOTTO(贝尔摩德)决心打</p>
+				</strong>
+				<strong>
+					<p>造“品鉴级奶油酒”，提倡内外兼修，让酒更有内</p>
+				</strong>
+				<strong>
+					<p>涵。不让奶油酒成为调酒的材料，而是值得品鉴</p>
+				</strong>
+				<strong>
+					<p>的直饮酒 </p>
+				</strong><br>
+				<strong>
+					<p>我们的品牌从奶油酒的起源出发，追求基酒的 </p>
+				</strong>
+				<strong>
+					<p>等级质量。追溯源头、高品质、有内涵，让顾客喝</p>
+				</strong>
+				<strong>
+					<p>到最好的奶油酒。 </p>
+				</strong>
+			</div>
+		</div>
+		<div class="two">
+			<img src="../img/3-26.png" alt="" style="height: 350px;">
+		</div>
+
+		<div class="five_1">
+			<img src="../img/3-27.png" alt="" style="height: 333px;">
+		</div>
+		<div class="five_4">
+			<img src="../img/3-28.png" alt="" style="height: 333px;">
+		</div>
+	</body>
+	<script src="../js/Gashapon.js"></script>
+</html>

@@ -1,0 +1,206 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/Gashapon.css">
+	</head>
+	<style>
+		/* || Checkbox hack to control information box display */
+
+		label[for="toggle"] {
+			position: absolute;
+			top: 35px;
+			right: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		input[type="checkbox"] {
+			position: absolute;
+			top: -100px;
+		}
+
+		/* information box styling */
+
+		aside {
+			background-color: #ffffff;
+			color: #00acff;
+
+			width: 500px;
+			height: 100%;
+			padding: 0 20px;
+
+			position: fixed;
+			top: 0;
+			right: -570px;
+
+			transition: 0.6s all;
+		}
+
+		aside li {
+			text-align: center;
+			font-size: 24px;
+			list-style: none;
+			margin-bottom: 100px;
+		}
+
+		a {
+			color: #00acff;
+			text-decoration: none;
+		}
+
+		/* Second part of the checkbox hack — the checked state */
+
+		input[type=checkbox]:checked+aside {
+			right: 0px;
+		}
+
+		.zuo {
+			position: absolute;
+			top: 55px;
+			left: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		.two {
+			width: 40%;
+			float: left;
+
+		}
+
+		.slider-container {
+			position: relative;
+			width: 500px;
+			height: 700px;
+		}
+
+		.slider {
+			display: flex;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			scroll-behavior: smooth;
+			-webkit-overflow-scrolling: touch;
+			/* For iOS momentum scrolling */
+		}
+
+		/* Each slide takes up the full width */
+		.slider img {
+			scroll-snap-align: start;
+			width: 540px;
+			height: 720px;
+		}
+
+		.slider::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
+
+	<body style="background-color:#ededed;" >
+			<a href="./index.html">
+				<div class="word"></div>
+			</a>
+			<a href="./h.html"><img src="../img/1-35.png" alt="" class="zuo" style="width: 150px;"></a>
+	
+			<label for="toggle"><img src="../img/1-36.png" alt="" style="width: 150px;"></label>
+			<input type="checkbox" id="toggle">
+			<aside>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+	
+				<ol>
+					<li>E-mail:<br> <br><a href="liuxinyun1213@gmail.com"> liuxinyun1213@gmail.com</a></li>
+					<li>Instagram:<br><br><a href="https://instagram.com/ke011_213?igshid=OGQ5ZDc2ODk2ZA==">ke011_213
+						</a> </li>
+					<li>小红书：<br><br><a href="https://www.xiaohongshu.com/user/profile/5fe6cf17000000000101fac1?xhsshare=CopyLink&amp;appuid=5fe6cf17000000000101fac1&amp;apptime=1686045289">Ke.
+						</a></li>
+				</ol>
+	
+			</aside>
+	
+			<div class="two" style="margin-left: 10%;">
+				<img src="../img/小网页-71.png" alt="" style="width:640px;height: 300px;margin-bottom: 100px;">
+				<video src="../img/IASO网站16_9的副本.mp4" width="640" height="360" autoplay="" loop="" muted="" style="margin-bottom: 100px;">
+				</video>
+				<img src="../img/小网页-83.png" alt="" style="width:640px; height:840px;margin-bottom: 100px;">
+	
+				<img src="../img/小网页-76.png" alt="" style="width:640px;height: 141px;">
+			</div>
+	
+			<div class="two" style="
+	    margin-left: 80px;
+	">
+				<video src="../img/5月30日的副本.mp4" width="640" height="360" autoplay="" loop="" muted="">
+				</video>
+				<div style="height: 360px;">
+					<strong><p style="font-size: 42px; margin-bottom: 5px;">IASO</p></strong>
+					<div class="two" style="font-size: 14px;">
+						<strong>
+							<p>IASO是希腊神话中生命女神的名</p>
+						</strong>
+						<strong>
+							<p>字，将脆弱生命的延长商品化，以贩</p>
+						</strong>
+						<strong>
+							<p>卖商品的形式来展现各种脆弱的生 </p>
+						</strong>
+						<strong>
+							<p>命。生命的脆弱性是生物无法改变</p>
+						</strong>
+						<strong>
+							<p>的弱点.，人们内心对想要留存或延</p>
+						</strong>
+						<strong>
+							<p>长脆弱生命带有期许。这世上的某 </p>
+						</strong>
+						<strong>
+							<p>些人为了留住生命，即使付出再大 </p>
+						</strong>
+						<strong>
+							<p>的代价也在所不惜。IASO其实是人 </p>
+						</strong>
+					</div>
+					<div class="two">
+						<strong>
+							<p>们对生命“期许”的寄托，通过特殊 </p>
+						</strong>
+						<strong>
+							<p>货币的交换，就可以获得延长生命</p>
+						</strong>
+						<strong>
+							<p>的商品。 </p>
+						</strong><br>
+						<strong>
+							<p>倘若真的存在这样的组织，观者愿</p>
+						</strong>
+						<strong>
+							<p>意花费多大的代价留住自己珍爱的 </p>
+						</strong>
+						<strong>
+							<p>生命？ </p>
+						</strong>
+					</div>
+				</div>
+				<img src="../img/小网页-73.png" alt="" style="margin-left: 40px;width: 150px;height: 150px;class=" two"="">
+				<img src="../img/小网页-82.png" alt="" style="margin-left: 123px;width: 150px;height: 150px;class=" two"="">
+	
+				<div class=" slider-container" style="margin-left: 0px;">
+					<div class="slider slider-button slider-next">
+						<img src="../img/小网页-74.png" alt="Image 22">
+						<img src="../img/小网页-77.png" alt="Image 23">
+						<img src="../img/小网页-78.png" alt="Image 24">
+						<img src="../img/小网页-79.png" alt="Image 25">
+						<img src="../img/小网页-80.png" alt="Image 26">
+						<img src="../img/小网页-81.png" alt="Image 27">
+					</div>
+				</div>
+				<img src="../img/小网页-75.png" alt="" style="width:645px; height:360px;margin-top: 43px;">
+			</div>
+	</body>
+	<script src="../js/Gashapon.js"></script>
+	<script src="../js/lbt.js"></script>
+</html>

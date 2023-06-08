@@ -4,17 +4,17 @@ html {
 }
 
 body {	
-  height: 90%;
-  width: 90%;
-  background: linear-gradient(#34B2FF, 55%, #FFFFDD, #FBB03B); 
+  height: 98%;
+  width: 98%;
+
 }
 
 .word {
-  width: 55%;
-  height: 20%;
-  margin: auto;
+  width: 40%;
+  height:15%;
+  margin:0 auto;
   background-image: url("../img/1-03.png");
-  background-size: cover;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 
@@ -31,8 +31,8 @@ body {
 }
 
 .gashapon {
-  width: 35vh;
-  height: 66vh;
+  width: 44vh;
+  height: 76vh;
   float: right;
   background-image: url("../img/1-04.png");
   background-size: cover;
@@ -72,8 +72,8 @@ body {
 }
 
 .top img:nth-child(5) {
-  left: 35%;
-  top: 63%;
+  left: 36%;
+  top: 66%;
   transform: rotate(220deg);
 }
 
@@ -84,25 +84,37 @@ body {
 }
 
 .top img:nth-child(7) {
-  left: 63%;
-  top: 54%;
+  left: 65%;
+  top: 59%;
   transform: rotate(90deg);
 }
 
 .top img:nth-child(8) {
-  left: 44%;
-  top: 50%;
+  left: 56%;
+  top: 49%;
+  transform: rotate(149deg);
+}
+.top img:nth-child(9) {
+  left: 74%;
+  top: 48%;
+  transform: rotate(277deg);
+}
+.top img:nth-child(10) {
+  left: 40%;
+  top: 52%;
+  transform: rotate(311deg);
 }
 
 .bottom {
   width: 100%;
   height: 40%;
   position: relative;
+  left: -10px;
 }
 
 .button1 {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   text-align: center; 
 }
 
@@ -135,6 +147,8 @@ body {
   height: 100%;
   z-index: 999;
   display: none;
+  top: -500px;
+  left: 60px;
 }
 
 .egg1 {
@@ -184,27 +198,68 @@ body {
   height: 7vh;
   position: absolute;
 }
-
-/* 蛋壳抖动的动画效果 */
-@keyframes eggshake { 
-  10%, 90% {
-    transform: translate3d(-2px, -1px, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(4px, 2px, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, -2px, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 2px, 0);
-  }
+.egg9{
+	width: 7vh;
+	height: 7vh;
+	position: absolute;
+}
+.egg10{
+	
+	width: 7vh;
+	height: 7vh;
+	position: absolute;
+}
+.shell1{
+	width: 350px;
+	position: absolute;
+	top: 639px;
+	left: -33px;
+	z-index: 2;
+	animation: anim 2s ease-in-out forwards;
 }
 
-.eggshake {
-  animation: eggshake 0.8s ease-in-out both;
-  transform: translate3d(0, 0, 0);
+
+.shellz{
+	position: absolute;
+	width: 205px;
+	top: 728px;
+	left: 37px;
+	z-index: 1;
+	animation: anim 2s ease-in-out forwards;
+}
+
+
+.shell2{
+	width: 350px;
+	position: absolute;
+	top: 815px;
+	left: -31px;
+	z-index: 1;
+	animation: anim 2s ease-in-out forwards;
+}
+
+.eggshell:hover .shell1{
+	top: 439px;
+	left: -33px;
+	transition-duration: 0.8s;
+}
+
+.eggshell:hover .shellz{
+	top: 608px;
+	transition-duration: 0.8s;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(0%) scale(0);
+	opacity: 0;
+  }
+  80% {
+    transform: translateY(0%) scale(0);
+  	opacity: 0;
+  }
+  100% {
+    transform: translateY(-200%) scale(1);
+	 opacity: 1;
+  }
 }

@@ -1,0 +1,222 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/Gashapon.css">
+	</head>
+	<style>
+		/* || Checkbox hack to control information box display */
+
+		label[for="toggle"] {
+			position: absolute;
+			top: 35px;
+			right: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		input[type="checkbox"] {
+			position: absolute;
+			top: -100px;
+		}
+
+		/* information box styling */
+
+		aside {
+			background-color: #ffffff;
+			color: #00acff;
+
+			width: 500px;
+			height: 100%;
+			padding: 0 20px;
+
+			position: fixed;
+			top: 0;
+			right: -570px;
+
+			transition: 0.6s all;
+		}
+
+		aside li {
+			text-align: center;
+			font-size: 24px;
+			list-style: none;
+			margin-bottom: 100px;
+		}
+
+		a {
+			color: #00acff;
+			text-decoration: none;
+		}
+
+		/* Second part of the checkbox hack — the checked state */
+
+		input[type=checkbox]:checked+aside {
+			right: 0px;
+		}
+
+		.zuo {
+			position: absolute;
+			top: 55px;
+			left: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		.three {
+			width: 30%;
+			margin-left: 2%;
+			float: left;
+		}
+
+		.two {
+			width: 40%;
+			float: left;
+		}
+
+		.five_1 {
+			width: 10%;
+			float: left;
+		}
+
+		.five_4 {
+			width: 30%;
+			float: left;
+			margin-left: 5%;
+		}
+
+		.slider-container {
+			position: relative;
+			width: 261px;
+			height: 300px;
+		}
+
+		.slider {
+			display: flex;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			scroll-behavior: smooth;
+			-webkit-overflow-scrolling: touch;
+			/* For iOS momentum scrolling */
+		}
+
+		/* Each slide takes up the full width */
+		.slider img {
+			scroll-snap-align: start;
+			width: 261px;
+			height: 369px;
+		}
+
+		.slider::-webkit-scrollbar {
+			display: none;
+		}
+
+		.dn {
+			background-image: url("../img/牙-38.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.dn:hover {
+			background-image: url("../img/牙-39.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+
+	<body>
+			<a href="../index.html">
+				<div class="word"></div>
+			</a>
+			<a href="./h.html"><img src="../img/1-35.png" alt="" class="zuo" style="width: 150px;"></a>
+	
+			<label for="toggle"><img src="../img/1-36.png" alt="" style="width: 150px;"></label>
+			<input type="checkbox" id="toggle">
+			<aside>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+	
+				<ol>
+					<li>E-mail:<br> <br><a href="liuxinyun1213@gmail.com"> liuxinyun1213@gmail.com</a></li>
+					<li>Instagram:<br><br><a href="https://instagram.com/ke011_213?igshid=OGQ5ZDc2ODk2ZA==">ke011_213
+						</a> </li>
+					<li>小红书：<br><br><a href="https://www.xiaohongshu.com/user/profile/5fe6cf17000000000101fac1?xhsshare=CopyLink&amp;appuid=5fe6cf17000000000101fac1&amp;apptime=1686045289">Ke.
+						</a></li>
+				</ol>
+	
+			</aside>
+	
+			<div class="three">
+				<img src="../img/牙-40.png" alt="" style="height: 300px;">
+			</div>
+			<div class="three">
+				<img src="../img/牙-32.png" alt="" style="height: 300px;margin-left: 20%;">
+			</div>
+			<div class="three" style="font-size: 14px;">
+				<div style="margin-left: 27%;">
+					<strong>
+						<p style="font-size: 36px;">小钻石公益组织</p>
+					</strong>
+					<strong>
+						<p>一个公益组织。主要宣传有关儿童龋齿的信息</p>
+					</strong><br>
+					<strong>
+						<p>家长可以免费学习关于牙齿的知识，及时关注孩子的</p>
+					</strong>
+					<strong>
+						<p>牙齿健康，让孩子保护自己的牙齿。对于儿童来说，他</p>
+					</strong>
+					<strong>
+						<p>们可以深刻认识到龋齿的危害，进而保护自己的牙齿。</p>
+					</strong><br>
+					<strong>
+						<p>我们希望每个孩子的牙齿都能像钻石一样坚硬闪耀。</p>
+					</strong>
+				</div>
+			</div>
+	
+			<div class="two">
+				<img src="../img/牙-41.png" alt="" style="height: 400px;">
+			</div>
+	
+			<div class="two" style="margin-left:5%;">
+				<div class="two">
+					<div class="two">
+						<img src="../img/牙-42.png" alt="" style="width: 200px;margin-top: 180px;margin-left: -35px;">
+					</div>
+					<div class="two" style="margin-left:20%;">
+						<div class="slider-container">
+							<div class="slider slider-button slider-next">
+								<img src="../img/牙-33.png" alt="Image 8">
+								<img src="../img/牙-35.png" alt="Image 9">
+								<img src="../img/牙-36.png" alt="Image 10">
+								<img src="../img/牙-37.png" alt="Image 11">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="two"><img src="../img/牙-34.png" alt="" style="height: 373px;margin-left: 80%;"></div>
+			</div>
+	
+			<div style="width: 40%;margin-left: 35%; margin-top: 890px;">
+				<div class="dn" style="width: 650px;height: 500px;">
+				</div>
+			</div>
+			<div style="width: 90%;margin-left: 10%;margin-top: 200px;">
+				<div class="two">
+					<div class="two"><img src="../img/牙-43.png" alt="" style="width: 300px;"></div>
+					<div class="two"><img src="../img/牙-44.png" alt="" style="width: 300px;margin-left: 60%;"></div>
+				</div>
+				<div class="two">
+					<div class="two"><img src="../img/牙-45.png" alt="" style="width: 300px;margin-left: 50%;"></div>
+					<div class="two"><img src="../img/牙-46.png" alt="" style="width: 300px;margin-left: 80%;"></div>
+				</div>
+			</div>
+		</body>
+	<script src="../js/Gashapon.js"></script>
+	<script src="../js/lbt.js"></script>
+</html>

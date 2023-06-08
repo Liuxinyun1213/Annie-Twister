@@ -1,16 +1,102 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Annie‘s Twister</title>
+		<title></title>
 		<link rel="stylesheet" href="css/Gashapon.css">
 	</head>
+	<style>
+		/* || Checkbox hack to control information box display */
+
+		label[for="toggle"] {
+			position: absolute;
+			top: 35px;
+			right: 177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		input[type="checkbox"] {
+			position: absolute;
+			top: -100px;
+		}
+
+		/* information box styling */
+
+		aside {
+			background-color: #ffffff;
+			color: #00acff;
+
+			width: 500px;
+			height: 100%;
+			padding: 0 20px;
+
+			position: fixed;
+			top: 0;
+			right: -570px;
+
+			transition: 0.6s all;
+		}
+
+		aside li {
+			text-align: center;
+			font-size: 24px;
+			list-style: none;
+			margin-bottom: 100px;
+		}
+
+		a {
+			color: #00acff;
+			text-decoration: none;
+		}
+
+		/* Second part of the checkbox hack — the checked state */
+
+		input[type=checkbox]:checked+aside {
+			right: 0px;
+		}
+
+		.zuo {
+			position: absolute;
+			top: 55px;
+			left:177px;
+			z-index: 1;
+			cursor: pointer;
+		}
+		body{
+			background: linear-gradient(#34B2FF, 55%, #FFFFDD, #FBB03B);
+			background-attachment: fixed;
+		}
+	</style>
+
 	<body>
-		<div class="word"></div>
+		<a href="./index.html"><div class="word"></div></a>
+		<a href="./html/h.html"><img src="./img/1-35.png" alt="" class="zuo" style="width: 150px;"></a>
+		
+		<label for="toggle"><img src="./img/1-36.png" alt="" style="width: 150px;"></label>
+		<input type="checkbox" id="toggle">
+		<aside>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		
+			<ol>
+				<li>E-mail:<br /> <br /><a href="liuxinyun1213@gmail.com"> liuxinyun1213@gmail.com</a></li>
+				<li>Instagram:<br /><br /><a
+						href="https://instagram.com/ke011_213?igshid=OGQ5ZDc2ODk2ZA==">ke011_213 </a> </li>
+				<li>小红书：<br /><br /><a
+						href="https://www.xiaohongshu.com/user/profile/5fe6cf17000000000101fac1?xhsshare=CopyLink&appuid=5fe6cf17000000000101fac1&apptime=1686045289">Ke.
+					</a></li>
+			</ol>
+		
+		</aside>
 		<div class="main">
 			<div class="left">
 				<div class="gashapon">
 					<div class="top">
-						<img src="./img/1-06.png" class="egg1" id="play1">
+						<img src="img/1-06.png" class="egg1" id="play1">
 						<img src="img/1-06.png" class="egg2" id="play2">
 						<img src="img/1-06.png" class="egg3" id="play3">
 						<img src="img/1-06.png" class="egg4" id="play4">
@@ -18,12 +104,17 @@
 						<img src="img/1-06.png" class="egg6" id="play6">
 						<img src="img/1-06.png" class="egg7" id="play7">
 						<img src="img/1-06.png" class="egg8" id="play8">
+						<img src="img/1-06.png" class="egg9" id="play9">
+						<img src="img/1-06.png" class="egg10" id="play10">
 					</div>
 					<div class="bottom">
-						<a href=""><div class="eggshell">
-							<img src="img/1-08.png" class="shell1" id="play9">
-							<img src="img/1-09.png" class="shell2" id="play10">
-						</div></a>
+						<a href="" id="button3">
+							<div class="eggshell">
+								<img src="img/1-08.png" class="shell1" id="play9">
+								<img alt="" src="#" id="tupian" class="shellz">
+								<img src="img/1-09.png" class="shell2" id="play10">
+							</div>
+						</a>
 
 
 						<div class="button1">
@@ -34,13 +125,13 @@
 			</div>
 			<div class="right">
 				<div class="pail">
-					<img src="img/1-07.png" id="pail">
+					<a href="./html/ljt.html"><img src="img/1-07.png" id="pail"></a>
 				</div>
 			</div>
 		</div>
-		
 
-		
+
+
 	</body>
 	<script src="js/Gashapon.js"></script>
 </html>
