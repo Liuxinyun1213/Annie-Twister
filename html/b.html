@@ -3,6 +3,7 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" href="../css/Gashapon.css">
+		<link  rel="shortcut icon"  href="../img/1-37.png" type="image/x-icon">
 	</head>
 	<style>
 		/* || Checkbox hack to control information box display */
@@ -11,7 +12,7 @@
 			position: absolute;
 			top: 35px;
 			right: 177px;
-			z-index: 1;
+			z-index: 999;
 			cursor: pointer;
 		}
 
@@ -19,21 +20,19 @@
 			position: absolute;
 			top: -100px;
 		}
+		
 
 		/* information box styling */
 
 		aside {
 			background-color: #ffffff;
 			color: #00acff;
-
 			width: 500px;
 			height: 100%;
 			padding: 0 20px;
-
 			position: fixed;
 			top: 0;
 			right: -570px;
-
 			transition: 0.6s all;
 		}
 
@@ -59,7 +58,7 @@
 			position: absolute;
 			top: 55px;
 			left:177px;
-			z-index: 1;
+			z-index: 0;
 			cursor: pointer;
 		}
 		.four {
@@ -75,14 +74,14 @@
 		.slider {
 		  display: flex;
 		  overflow-x: auto;
-		  scroll-snap-type: x mandatory;
+		/*  scroll-snap-type: x mandatory; */
 		  scroll-behavior: smooth;
 		  -webkit-overflow-scrolling: touch; /* For iOS momentum scrolling */
 		}
 		
 		/* Each slide takes up the full width */
 		.slider img {
-		  scroll-snap-align: start;
+		 /* scroll-snap-align: start; */
 		}
 		
 		.slider::-webkit-scrollbar {
@@ -111,9 +110,9 @@
 
 	<body style="background-color: #f5f5f5;">
 		<a href="../index.html"><div class="word"></div></a>
-		<a href="./h.html"><img src="./img/1-35.png" alt="" class="zuo" style="width: 150px;"></a>
+		<a href="./h.html"><img src="../img/1-35.png" alt="" class="zuo" style="width: 150px;"></a>
 		
-		<label for="toggle"><img src="./img/1-36.png" alt="" style="width: 150px;"></label>
+		<label for="toggle"><img src="../img/1-36.png" alt="" style="width: 150px;"></label>
 		<input type="checkbox" id="toggle">
 		<aside>
 			<br>
